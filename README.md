@@ -1,7 +1,5 @@
 # Sentinel 
 
-## Description
-
 Sentinel is an autmotatic UI log system.
 It is designed to implement log for important ui activities without modification on the original ui code.
 
