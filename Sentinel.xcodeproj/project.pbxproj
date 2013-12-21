@@ -11,6 +11,7 @@
 		6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */; };
 		6D534C43186578B7000197F5 /* NSObject+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C42186578B7000197F5 /* NSObject+Sentinel.m */; };
 		6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */; };
+		6D70C4D4186631DC00E33D1D /* UIApplication+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */; };
 		6D8DB84E1852D3AE009DA6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84D1852D3AE009DA6BE /* Foundation.framework */; };
 		6D8DB8501852D3AE009DA6BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */; };
 		6D8DB8521852D3AE009DA6BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB8511852D3AE009DA6BE /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 		6D534C42186578B7000197F5 /* NSObject+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sentinel.m"; sourceTree = "<group>"; };
 		6D70C4B51865819700E33D1D /* UICollectionView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Sentinel.h"; sourceTree = "<group>"; };
 		6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C4D2186631DC00E33D1D /* UIApplication+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sentinel.m"; sourceTree = "<group>"; };
 		6D8DB84A1852D3AE009DA6BE /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8DB84D1852D3AE009DA6BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +79,8 @@
 		6D534C341865748A000197F5 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
+				6D70C4D2186631DC00E33D1D /* UIApplication+Sentinel.h */,
+				6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */,
 				6D534C41186578B7000197F5 /* NSObject+Sentinel.h */,
 				6D534C42186578B7000197F5 /* NSObject+Sentinel.m */,
 				6D534C3E1865788A000197F5 /* UITableView+Sentinel.h */,
@@ -225,6 +230,7 @@
 				6D8DB85E1852D3AE009DA6BE /* SSAppDelegate.m in Sources */,
 				6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */,
 				6D8DB85A1852D3AE009DA6BE /* main.m in Sources */,
+				6D70C4D4186631DC00E33D1D /* UIApplication+Sentinel.m in Sources */,
 				6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

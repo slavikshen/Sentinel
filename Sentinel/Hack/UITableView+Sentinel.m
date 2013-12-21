@@ -50,5 +50,29 @@
     
 }
 
+- (NSString*)sentinalObjectIdentification {
+    
+    id delegate = self.delegate;
+    id datasource = self.dataSource;
+    
+    NSString* className = NSStringFromClass([self class]);
+    
+    NSMutableString* buf = [NSMutableString stringWithCapacity:128];
+    [buf appendFormat:@"{\"class\":\"%@\"", className];
+    
+    if( delegate ) {
+        NSString* delegateIdentification = [delegate sentinalObjectIdentification];
+        [buf appendFormat:@",\"delegate\":%@", delegateIdentification];
+    }
+    if( datasource ) {
+        NSString* dataSourceIdentification = [datasource sentinalObjectIdentification];
+        [buf appendFormat:@",\"datasource\":%@", dataSourceIdentification];
+    }
+    
+    [buf appendString:@"}"];
+    
+    return buf;
+}
+
 
 @end
