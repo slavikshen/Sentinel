@@ -1,5 +1,5 @@
 //
-//  SSViewController.h
+//  SSBlueViewController.h
 //  Sentinel
 //
 //  Created by Slavik on 12/6/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface SSBlueViewController : UIViewController
 
 @end

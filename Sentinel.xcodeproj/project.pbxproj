@@ -7,34 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D534C3D186577F8000197F5 /* UIViewController+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */; };
+		6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */; };
+		6D534C43186578B7000197F5 /* NSObject+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C42186578B7000197F5 /* NSObject+Sentinel.m */; };
+		6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */; };
 		6D8DB84E1852D3AE009DA6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84D1852D3AE009DA6BE /* Foundation.framework */; };
 		6D8DB8501852D3AE009DA6BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */; };
 		6D8DB8521852D3AE009DA6BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB8511852D3AE009DA6BE /* UIKit.framework */; };
 		6D8DB8581852D3AE009DA6BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8561852D3AE009DA6BE /* InfoPlist.strings */; };
 		6D8DB85A1852D3AE009DA6BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB8591852D3AE009DA6BE /* main.m */; };
 		6D8DB85E1852D3AE009DA6BE /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB85D1852D3AE009DA6BE /* SSAppDelegate.m */; };
-		6D8DB8611852D3AE009DA6BE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB85F1852D3AE009DA6BE /* Main_iPhone.storyboard */; };
-		6D8DB8641852D3AF009DA6BE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8621852D3AE009DA6BE /* Main_iPad.storyboard */; };
 		6D8DB8671852D3AF009DA6BE /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB8661852D3AF009DA6BE /* SSViewController.m */; };
 		6D8DB8691852D3AF009DA6BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8681852D3AF009DA6BE /* Images.xcassets */; };
-		6D8DB8701852D3AF009DA6BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB86F1852D3AF009DA6BE /* XCTest.framework */; };
-		6D8DB8711852D3AF009DA6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84D1852D3AE009DA6BE /* Foundation.framework */; };
-		6D8DB8721852D3AF009DA6BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB8511852D3AE009DA6BE /* UIKit.framework */; };
-		6D8DB87A1852D3AF009DA6BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8781852D3AF009DA6BE /* InfoPlist.strings */; };
-		6D8DB87C1852D3AF009DA6BE /* SentinelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB87B1852D3AF009DA6BE /* SentinelTests.m */; };
+		6D8DB8861852D790009DA6BE /* SSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8851852D790009DA6BE /* SSViewController.xib */; };
+		6D8DB88A1852DD33009DA6BE /* SSRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB8881852DD33009DA6BE /* SSRedViewController.m */; };
+		6D8DB88B1852DD33009DA6BE /* SSRedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8891852DD33009DA6BE /* SSRedViewController.xib */; };
+		6D8DB88F1852DD4F009DA6BE /* SSBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB88D1852DD4F009DA6BE /* SSBlueViewController.m */; };
+		6D8DB8901852DD4F009DA6BE /* SSBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB88E1852DD4F009DA6BE /* SSBlueViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6D8DB8731852D3AF009DA6BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D8DB8421852D3AE009DA6BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D8DB8491852D3AE009DA6BE;
-			remoteInfo = Sentinel;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		6D534C1618642AEE000197F5 /* AfxMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfxMacros.h; sourceTree = "<group>"; };
+		6D534C3B186577F8000197F5 /* UIViewController+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sentinel.h"; sourceTree = "<group>"; };
+		6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sentinel.m"; sourceTree = "<group>"; };
+		6D534C3E1865788A000197F5 /* UITableView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Sentinel.h"; sourceTree = "<group>"; };
+		6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Sentinel.m"; sourceTree = "<group>"; };
+		6D534C41186578B7000197F5 /* NSObject+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sentinel.h"; sourceTree = "<group>"; };
+		6D534C42186578B7000197F5 /* NSObject+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C4B51865819700E33D1D /* UICollectionView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Sentinel.m"; sourceTree = "<group>"; };
 		6D8DB84A1852D3AE009DA6BE /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8DB84D1852D3AE009DA6BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +46,17 @@
 		6D8DB85B1852D3AE009DA6BE /* Sentinel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sentinel-Prefix.pch"; sourceTree = "<group>"; };
 		6D8DB85C1852D3AE009DA6BE /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
 		6D8DB85D1852D3AE009DA6BE /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
-		6D8DB8601852D3AE009DA6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6D8DB8631852D3AF009DA6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		6D8DB8651852D3AF009DA6BE /* SSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
 		6D8DB8661852D3AF009DA6BE /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		6D8DB8681852D3AF009DA6BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6D8DB86E1852D3AF009DA6BE /* SentinelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentinelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8DB86F1852D3AF009DA6BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6D8DB8771852D3AF009DA6BE /* SentinelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SentinelTests-Info.plist"; sourceTree = "<group>"; };
-		6D8DB8791852D3AF009DA6BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6D8DB87B1852D3AF009DA6BE /* SentinelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentinelTests.m; sourceTree = "<group>"; };
+		6D8DB8851852D790009DA6BE /* SSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSViewController.xib; sourceTree = "<group>"; };
+		6D8DB8871852DD33009DA6BE /* SSRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRedViewController.h; sourceTree = "<group>"; };
+		6D8DB8881852DD33009DA6BE /* SSRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRedViewController.m; sourceTree = "<group>"; };
+		6D8DB8891852DD33009DA6BE /* SSRedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSRedViewController.xib; sourceTree = "<group>"; };
+		6D8DB88C1852DD4F009DA6BE /* SSBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBlueViewController.h; sourceTree = "<group>"; };
+		6D8DB88D1852DD4F009DA6BE /* SSBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBlueViewController.m; sourceTree = "<group>"; };
+		6D8DB88E1852DD4F009DA6BE /* SSBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSBlueViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,24 +70,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D8DB86B1852D3AF009DA6BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D8DB8701852D3AF009DA6BE /* XCTest.framework in Frameworks */,
-				6D8DB8721852D3AF009DA6BE /* UIKit.framework in Frameworks */,
-				6D8DB8711852D3AF009DA6BE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D534C341865748A000197F5 /* Hack */ = {
+			isa = PBXGroup;
+			children = (
+				6D534C41186578B7000197F5 /* NSObject+Sentinel.h */,
+				6D534C42186578B7000197F5 /* NSObject+Sentinel.m */,
+				6D534C3E1865788A000197F5 /* UITableView+Sentinel.h */,
+				6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */,
+				6D534C3B186577F8000197F5 /* UIViewController+Sentinel.h */,
+				6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */,
+				6D70C4B51865819700E33D1D /* UICollectionView+Sentinel.h */,
+				6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */,
+			);
+			path = Hack;
+			sourceTree = "<group>";
+		};
 		6D8DB8411852D3AE009DA6BE = {
 			isa = PBXGroup;
 			children = (
 				6D8DB8531852D3AE009DA6BE /* Sentinel */,
-				6D8DB8751852D3AF009DA6BE /* SentinelTests */,
 				6D8DB84C1852D3AE009DA6BE /* Frameworks */,
 				6D8DB84B1852D3AE009DA6BE /* Products */,
 			);
@@ -95,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				6D8DB84A1852D3AE009DA6BE /* Sentinel.app */,
-				6D8DB86E1852D3AF009DA6BE /* SentinelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,13 +119,19 @@
 		6D8DB8531852D3AE009DA6BE /* Sentinel */ = {
 			isa = PBXGroup;
 			children = (
+				6D534C341865748A000197F5 /* Hack */,
 				6D8DB85C1852D3AE009DA6BE /* SSAppDelegate.h */,
 				6D8DB85D1852D3AE009DA6BE /* SSAppDelegate.m */,
-				6D8DB85F1852D3AE009DA6BE /* Main_iPhone.storyboard */,
-				6D8DB8621852D3AE009DA6BE /* Main_iPad.storyboard */,
 				6D8DB8651852D3AF009DA6BE /* SSViewController.h */,
 				6D8DB8661852D3AF009DA6BE /* SSViewController.m */,
+				6D8DB8851852D790009DA6BE /* SSViewController.xib */,
 				6D8DB8681852D3AF009DA6BE /* Images.xcassets */,
+				6D8DB8871852DD33009DA6BE /* SSRedViewController.h */,
+				6D8DB8881852DD33009DA6BE /* SSRedViewController.m */,
+				6D8DB8891852DD33009DA6BE /* SSRedViewController.xib */,
+				6D8DB88C1852DD4F009DA6BE /* SSBlueViewController.h */,
+				6D8DB88D1852DD4F009DA6BE /* SSBlueViewController.m */,
+				6D8DB88E1852DD4F009DA6BE /* SSBlueViewController.xib */,
 				6D8DB8541852D3AE009DA6BE /* Supporting Files */,
 			);
 			path = Sentinel;
@@ -129,28 +140,11 @@
 		6D8DB8541852D3AE009DA6BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D534C1618642AEE000197F5 /* AfxMacros.h */,
 				6D8DB8551852D3AE009DA6BE /* Sentinel-Info.plist */,
 				6D8DB8561852D3AE009DA6BE /* InfoPlist.strings */,
 				6D8DB8591852D3AE009DA6BE /* main.m */,
 				6D8DB85B1852D3AE009DA6BE /* Sentinel-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6D8DB8751852D3AF009DA6BE /* SentinelTests */ = {
-			isa = PBXGroup;
-			children = (
-				6D8DB87B1852D3AF009DA6BE /* SentinelTests.m */,
-				6D8DB8761852D3AF009DA6BE /* Supporting Files */,
-			);
-			path = SentinelTests;
-			sourceTree = "<group>";
-		};
-		6D8DB8761852D3AF009DA6BE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6D8DB8771852D3AF009DA6BE /* SentinelTests-Info.plist */,
-				6D8DB8781852D3AF009DA6BE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,24 +169,6 @@
 			productReference = 6D8DB84A1852D3AE009DA6BE /* Sentinel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D8DB86D1852D3AF009DA6BE /* SentinelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D8DB8821852D3AF009DA6BE /* Build configuration list for PBXNativeTarget "SentinelTests" */;
-			buildPhases = (
-				6D8DB86A1852D3AF009DA6BE /* Sources */,
-				6D8DB86B1852D3AF009DA6BE /* Frameworks */,
-				6D8DB86C1852D3AF009DA6BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D8DB8741852D3AF009DA6BE /* PBXTargetDependency */,
-			);
-			name = SentinelTests;
-			productName = SentinelTests;
-			productReference = 6D8DB86E1852D3AF009DA6BE /* SentinelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +178,6 @@
 				CLASSPREFIX = SS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Slavik;
-				TargetAttributes = {
-					6D8DB86D1852D3AF009DA6BE = {
-						TestTargetID = 6D8DB8491852D3AE009DA6BE;
-					};
-				};
 			};
 			buildConfigurationList = 6D8DB8451852D3AE009DA6BE /* Build configuration list for PBXProject "Sentinel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				6D8DB8491852D3AE009DA6BE /* Sentinel */,
-				6D8DB86D1852D3AF009DA6BE /* SentinelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,18 +202,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D8DB8641852D3AF009DA6BE /* Main_iPad.storyboard in Resources */,
+				6D8DB8901852DD4F009DA6BE /* SSBlueViewController.xib in Resources */,
+				6D8DB88B1852DD33009DA6BE /* SSRedViewController.xib in Resources */,
 				6D8DB8691852D3AF009DA6BE /* Images.xcassets in Resources */,
-				6D8DB8611852D3AE009DA6BE /* Main_iPhone.storyboard in Resources */,
+				6D8DB8861852D790009DA6BE /* SSViewController.xib in Resources */,
 				6D8DB8581852D3AE009DA6BE /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D8DB86C1852D3AF009DA6BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D8DB87A1852D3AF009DA6BE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,59 +217,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D534C3D186577F8000197F5 /* UIViewController+Sentinel.m in Sources */,
+				6D8DB88F1852DD4F009DA6BE /* SSBlueViewController.m in Sources */,
+				6D8DB88A1852DD33009DA6BE /* SSRedViewController.m in Sources */,
 				6D8DB8671852D3AF009DA6BE /* SSViewController.m in Sources */,
+				6D534C43186578B7000197F5 /* NSObject+Sentinel.m in Sources */,
 				6D8DB85E1852D3AE009DA6BE /* SSAppDelegate.m in Sources */,
+				6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */,
 				6D8DB85A1852D3AE009DA6BE /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D8DB86A1852D3AF009DA6BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D8DB87C1852D3AF009DA6BE /* SentinelTests.m in Sources */,
+				6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6D8DB8741852D3AF009DA6BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D8DB8491852D3AE009DA6BE /* Sentinel */;
-			targetProxy = 6D8DB8731852D3AF009DA6BE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6D8DB8561852D3AE009DA6BE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6D8DB8571852D3AE009DA6BE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6D8DB85F1852D3AE009DA6BE /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D8DB8601852D3AE009DA6BE /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6D8DB8621852D3AE009DA6BE /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D8DB8631852D3AF009DA6BE /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		6D8DB8781852D3AF009DA6BE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D8DB8791852D3AF009DA6BE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -414,48 +343,6 @@
 			};
 			name = Release;
 		};
-		6D8DB8831852D3AF009DA6BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sentinel.app/Sentinel";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SentinelTests/SentinelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6D8DB8841852D3AF009DA6BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sentinel.app/Sentinel";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
-				INFOPLIST_FILE = "SentinelTests/SentinelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,14 +362,7 @@
 				6D8DB8811852D3AF009DA6BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		6D8DB8821852D3AF009DA6BE /* Build configuration list for PBXNativeTarget "SentinelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D8DB8831852D3AF009DA6BE /* Debug */,
-				6D8DB8841852D3AF009DA6BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

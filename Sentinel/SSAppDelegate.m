@@ -7,12 +7,28 @@
 //
 
 #import "SSAppDelegate.h"
+#import "SSViewController.h"
+#import "NSObject+Sentinel.h"
 
 @implementation SSAppDelegate
+
+- (void)_loadWindow {
+    UIWindow* win = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = win;
+    SSViewController* viewController = [[SSViewController alloc]init];
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    win.rootViewController = navController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [NSObject leakMethods:[UICollectionView class]];
+    
+    [self _loadWindow];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
