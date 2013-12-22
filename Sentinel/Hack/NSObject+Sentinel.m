@@ -74,7 +74,10 @@
 
 - (void)sentinelLogEvent:(NSString*)event {
     
-    DLog(@"Sentinel: %@", event);
+#if DEBUG
+    NSLog(@"Sentinel: %@", event);
+#endif
+    
 #ifdef FLURRY_ID
     [Flurry logUserEvent:event];
 #endif

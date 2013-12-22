@@ -34,7 +34,7 @@
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     [nc addObserver:self
            selector:@selector(_appEnterForeground)
-               name:UIApplicationDidBecomeActiveNotification
+               name:UIApplicationWillEnterForegroundNotification
              object:nil];
     [nc addObserver:self
            selector:@selector(_appEnterBackground)
