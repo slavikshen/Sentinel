@@ -23,7 +23,7 @@
     [self _sentinelViewDidAppear:animated];
     if( [self sentinelEnabledInTheClass] ) {
         NSString* identification = [self sentinalObjectIdentification];
-        NSString* event = [@"{ \"event\":\"enter\", \"arg\":" stringByAppendingString:identification];
+        NSString* event = [@"{\"event\":\"enter\",\"arg\":" stringByAppendingString:identification];
         [self sentinelLogEvent:event];
     }
     
@@ -34,7 +34,7 @@
     [self _sentinelViewDidDisappear:animated];
     if( [self sentinelEnabledInTheClass] ) {
         NSString* identification = [self sentinalObjectIdentification];
-        NSString* event = [@"{ \"event\":\"leave\", \"arg\":" stringByAppendingString:identification];
+        NSString* event = [@"{\"event\":\"leave\",\"arg\":" stringByAppendingString:identification];
         [self sentinelLogEvent:event];
     }
     
@@ -55,8 +55,12 @@
     NSString* title = self.title;
     NSString* className = NSStringFromClass([self class]);
     
-    NSString* identification = _F(@"{\"class\":\"%@\", \"title\":\"%@\"}", className, title);
-
+    NSString* identification = nil;
+    if( title.length ) {
+        identification = _F(@"{\"class\":\"%@\",\"title\":\"%@\"}", className, title);
+    } else {
+        identification = _F(@"{\"class\":\"%@\"}", className);
+    }
     return identification;
 }
 
