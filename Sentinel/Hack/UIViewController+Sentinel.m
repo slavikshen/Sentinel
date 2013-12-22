@@ -23,7 +23,7 @@
     [self _sentinelViewDidAppear:animated];
     if( [self sentinelEnabledInTheClass] ) {
         NSString* identification = [self sentinalObjectIdentification];
-        NSString* event = [@"{\"event\":\"enter\",\"arg\":" stringByAppendingString:identification];
+        NSString* event = [@"{\"event\":\"enter\",\"sender\":" stringByAppendingString:identification];
         [self sentinelLogEvent:event];
     }
     
@@ -34,7 +34,7 @@
     [self _sentinelViewDidDisappear:animated];
     if( [self sentinelEnabledInTheClass] ) {
         NSString* identification = [self sentinalObjectIdentification];
-        NSString* event = [@"{\"event\":\"leave\",\"arg\":" stringByAppendingString:identification];
+        NSString* event = [@"{\"event\":\"leave\",\"sender\":" stringByAppendingString:identification];
         [self sentinelLogEvent:event];
     }
     

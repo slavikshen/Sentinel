@@ -22,7 +22,6 @@
 
 + (void)prepareKagemusha:(Class)c methodMap:(NSDictionary*)map;
 
-
 - (BOOL)sentinelEnabledInTheClass;
 - (NSString*)sentinalObjectIdentification;
 - (void)sentinelLogEvent:(NSString*)event;

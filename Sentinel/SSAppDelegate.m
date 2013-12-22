@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [NSObject leakMethods:[UICollectionView class]];
+    [NSObject leakMethods:[UIControl class]];
     
     [self _loadWindow];
     
