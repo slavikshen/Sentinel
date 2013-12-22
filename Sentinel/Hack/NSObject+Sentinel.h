@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#ifndef _F
+#define _F(fmt,...) ([NSString stringWithFormat:fmt, ##__VA_ARGS__] ) 
+#endif
+
 @interface NSObject (Sentinel)
 
 + (BOOL)swizzleMethod:(SEL)origSelector withMethod:(SEL)newSelector;
