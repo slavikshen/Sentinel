@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D534C3D186577F8000197F5 /* UIViewController+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */; };
-		6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */; };
-		6D534C43186578B7000197F5 /* NSObject+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D534C42186578B7000197F5 /* NSObject+Sentinel.m */; };
-		6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */; };
-		6D70C4D4186631DC00E33D1D /* UIApplication+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */; };
+		6D70C5191866DB9F00E33D1D /* NSObject+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C50A1866DB9F00E33D1D /* NSObject+Sentinel.m */; };
+		6D70C51A1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C50C1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.m */; };
+		6D70C51B1866DB9F00E33D1D /* SKRequest+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C50E1866DB9F00E33D1D /* SKRequest+Sentinel.m */; };
+		6D70C51C1866DB9F00E33D1D /* UIApplication+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5101866DB9F00E33D1D /* UIApplication+Sentinel.m */; };
+		6D70C51D1866DB9F00E33D1D /* UICollectionView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5121866DB9F00E33D1D /* UICollectionView+Sentinel.m */; };
+		6D70C51E1866DB9F00E33D1D /* UIControl+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5141866DB9F00E33D1D /* UIControl+Sentinel.m */; };
+		6D70C51F1866DB9F00E33D1D /* UITableView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */; };
+		6D70C5201866DB9F00E33D1D /* UIViewController+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */; };
 		6D8DB84E1852D3AE009DA6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84D1852D3AE009DA6BE /* Foundation.framework */; };
 		6D8DB8501852D3AE009DA6BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */; };
 		6D8DB8521852D3AE009DA6BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB8511852D3AE009DA6BE /* UIKit.framework */; };
@@ -29,16 +32,22 @@
 
 /* Begin PBXFileReference section */
 		6D534C1618642AEE000197F5 /* AfxMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfxMacros.h; sourceTree = "<group>"; };
-		6D534C3B186577F8000197F5 /* UIViewController+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sentinel.h"; sourceTree = "<group>"; };
-		6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sentinel.m"; sourceTree = "<group>"; };
-		6D534C3E1865788A000197F5 /* UITableView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Sentinel.h"; sourceTree = "<group>"; };
-		6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Sentinel.m"; sourceTree = "<group>"; };
-		6D534C41186578B7000197F5 /* NSObject+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sentinel.h"; sourceTree = "<group>"; };
-		6D534C42186578B7000197F5 /* NSObject+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sentinel.m"; sourceTree = "<group>"; };
-		6D70C4B51865819700E33D1D /* UICollectionView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Sentinel.h"; sourceTree = "<group>"; };
-		6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Sentinel.m"; sourceTree = "<group>"; };
-		6D70C4D2186631DC00E33D1D /* UIApplication+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sentinel.h"; sourceTree = "<group>"; };
-		6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C5091866DB9F00E33D1D /* NSObject+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C50A1866DB9F00E33D1D /* NSObject+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C50B1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPaymentQueue+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C50C1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPaymentQueue+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C50D1866DB9F00E33D1D /* SKRequest+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKRequest+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C50E1866DB9F00E33D1D /* SKRequest+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKRequest+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C50F1866DB9F00E33D1D /* UIApplication+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C5101866DB9F00E33D1D /* UIApplication+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C5111866DB9F00E33D1D /* UICollectionView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C5121866DB9F00E33D1D /* UICollectionView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C5131866DB9F00E33D1D /* UIControl+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C5141866DB9F00E33D1D /* UIControl+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C5151866DB9F00E33D1D /* UITableView+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C5171866DB9F00E33D1D /* UIViewController+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sentinel.h"; sourceTree = "<group>"; };
+		6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sentinel.m"; sourceTree = "<group>"; };
 		6D8DB84A1852D3AE009DA6BE /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8DB84D1852D3AE009DA6BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,16 +88,22 @@
 		6D534C341865748A000197F5 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
-				6D70C4D2186631DC00E33D1D /* UIApplication+Sentinel.h */,
-				6D70C4D3186631DC00E33D1D /* UIApplication+Sentinel.m */,
-				6D534C41186578B7000197F5 /* NSObject+Sentinel.h */,
-				6D534C42186578B7000197F5 /* NSObject+Sentinel.m */,
-				6D534C3E1865788A000197F5 /* UITableView+Sentinel.h */,
-				6D534C3F1865788A000197F5 /* UITableView+Sentinel.m */,
-				6D534C3B186577F8000197F5 /* UIViewController+Sentinel.h */,
-				6D534C3C186577F8000197F5 /* UIViewController+Sentinel.m */,
-				6D70C4B51865819700E33D1D /* UICollectionView+Sentinel.h */,
-				6D70C4B61865819700E33D1D /* UICollectionView+Sentinel.m */,
+				6D70C5091866DB9F00E33D1D /* NSObject+Sentinel.h */,
+				6D70C50A1866DB9F00E33D1D /* NSObject+Sentinel.m */,
+				6D70C50B1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.h */,
+				6D70C50C1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.m */,
+				6D70C50D1866DB9F00E33D1D /* SKRequest+Sentinel.h */,
+				6D70C50E1866DB9F00E33D1D /* SKRequest+Sentinel.m */,
+				6D70C50F1866DB9F00E33D1D /* UIApplication+Sentinel.h */,
+				6D70C5101866DB9F00E33D1D /* UIApplication+Sentinel.m */,
+				6D70C5111866DB9F00E33D1D /* UICollectionView+Sentinel.h */,
+				6D70C5121866DB9F00E33D1D /* UICollectionView+Sentinel.m */,
+				6D70C5131866DB9F00E33D1D /* UIControl+Sentinel.h */,
+				6D70C5141866DB9F00E33D1D /* UIControl+Sentinel.m */,
+				6D70C5151866DB9F00E33D1D /* UITableView+Sentinel.h */,
+				6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */,
+				6D70C5171866DB9F00E33D1D /* UIViewController+Sentinel.h */,
+				6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -222,16 +237,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D534C3D186577F8000197F5 /* UIViewController+Sentinel.m in Sources */,
 				6D8DB88F1852DD4F009DA6BE /* SSBlueViewController.m in Sources */,
+				6D70C51C1866DB9F00E33D1D /* UIApplication+Sentinel.m in Sources */,
+				6D70C51A1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.m in Sources */,
 				6D8DB88A1852DD33009DA6BE /* SSRedViewController.m in Sources */,
+				6D70C51B1866DB9F00E33D1D /* SKRequest+Sentinel.m in Sources */,
 				6D8DB8671852D3AF009DA6BE /* SSViewController.m in Sources */,
-				6D534C43186578B7000197F5 /* NSObject+Sentinel.m in Sources */,
+				6D70C51D1866DB9F00E33D1D /* UICollectionView+Sentinel.m in Sources */,
+				6D70C5201866DB9F00E33D1D /* UIViewController+Sentinel.m in Sources */,
 				6D8DB85E1852D3AE009DA6BE /* SSAppDelegate.m in Sources */,
-				6D70C4B71865819700E33D1D /* UICollectionView+Sentinel.m in Sources */,
 				6D8DB85A1852D3AE009DA6BE /* main.m in Sources */,
-				6D70C4D4186631DC00E33D1D /* UIApplication+Sentinel.m in Sources */,
-				6D534C401865788A000197F5 /* UITableView+Sentinel.m in Sources */,
+				6D70C5191866DB9F00E33D1D /* NSObject+Sentinel.m in Sources */,
+				6D70C51E1866DB9F00E33D1D /* UIControl+Sentinel.m in Sources */,
+				6D70C51F1866DB9F00E33D1D /* UITableView+Sentinel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
