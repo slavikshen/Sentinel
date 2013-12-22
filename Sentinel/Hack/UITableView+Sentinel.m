@@ -31,7 +31,7 @@
         NSString* identification = [self sentinalObjectIdentification];
         NSInteger section = indexPath.section;
         NSInteger row = indexPath.row;
-        NSString* event = [NSString stringWithFormat:@"{ \"event\":\"select\", \"indexPath\":{\"section\":\"%d\",\"row\":\"%d\"}, \"arg\": %@}", section, row, identification];
+        NSString* event = [NSString stringWithFormat:@"{\"event\":\"select\", \"indexPath\":{\"section\":\"%d\",\"row\":\"%d\"}, \"arg\": %@}", section, row, identification];
         [self sentinelLogEvent:event];
     }
     
@@ -44,7 +44,7 @@
         NSString* identification = [self sentinalObjectIdentification];
         NSInteger section = indexPath.section;
         NSInteger row = indexPath.row;
-        NSString* event = [NSString stringWithFormat:@"{ \"event\":\"deselect\", \"indexPath\":{\"section\":\"%d\",\"row\":\"%d\"}, \"arg\": %@}", section, row, identification];
+        NSString* event = [NSString stringWithFormat:@"{\"event\":\"deselect\", \"indexPath\":{\"section\":\"%d\",\"row\":\"%d\"}, \"arg\": %@}", section, row, identification];
         [self sentinelLogEvent:event];
     }
     
