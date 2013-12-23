@@ -9,57 +9,53 @@
 #import "UIApplication+Sentinel.h"
 #import "NSObject+Sentinel.h"
 
-@interface AppActivitySentinal : NSObject
-
-+ (AppActivitySentinal*)appSentinal;
-
-- (void)start;
-
-@end
-
-@implementation AppActivitySentinal
-
-+ (AppActivitySentinal*)appSentinal {
- 
-    static AppActivitySentinal* inst = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        inst = [[AppActivitySentinal alloc] init];
-    });
-    
-    return inst;
-}
-
-- (void) start {
-    NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
-    [nc addObserver:self
-           selector:@selector(_appEnterForeground)
-               name:UIApplicationWillEnterForegroundNotification
-             object:nil];
-    [nc addObserver:self
-           selector:@selector(_appEnterBackground)
-               name:UIApplicationDidEnterBackgroundNotification
-             object:nil];
-}
-
-- (void)_appEnterForeground {
-    [self sentinelLogEvent:@"{\"event\":\"app_enter_foreground\"}"];
-}
-
-- (void)_appEnterBackground {
-    [self sentinelLogEvent:@"{\"event\":\"app_enter_background\"}"];    
-}
-
-@end
+//@interface AppActivitySentinal : NSObject
+//
+//+ (AppActivitySentinal*)appSentinal;
+//
+//- (void)start;
+//
+//@end
+//
+//@implementation AppActivitySentinal
+//
+//+ (AppActivitySentinal*)appSentinal {
+// 
+//    static AppActivitySentinal* inst = nil;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        inst = [[AppActivitySentinal alloc] init];
+//    });
+//    
+//    return inst;
+//}
+//
+//- (void) start {
+//    NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+//    [nc addObserver:self
+//           selector:@selector(_appEnterForeground)
+//               name:UIApplicationWillEnterForegroundNotification
+//             object:nil];
+//    [nc addObserver:self
+//           selector:@selector(_appEnterBackground)
+//               name:UIApplicationDidEnterBackgroundNotification
+//             object:nil];
+//}
+//
+//- (void)_appEnterForeground {
+//    [self sentinelLogEvent:@"{\"event\":\"app_enter_foreground\"}"];
+//}
+//
+//- (void)_appEnterBackground {
+//    [self sentinelLogEvent:@"{\"event\":\"app_enter_background\"}"];    
+//}
+//
+//@end
 
 @implementation UIApplication (Sentinel)
 
 + (void)load {
-    
     [self swizzleMethod:@selector(openURL:) withMethod:@selector(_sentinal_openURL:)];
-    
-    [[AppActivitySentinal appSentinal] start];
-    
 }
 
 - (BOOL)_sentinal_openURL:(NSURL*)url {

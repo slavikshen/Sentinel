@@ -15,6 +15,8 @@
 		6D70C51E1866DB9F00E33D1D /* UIControl+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5141866DB9F00E33D1D /* UIControl+Sentinel.m */; };
 		6D70C51F1866DB9F00E33D1D /* UITableView+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */; };
 		6D70C5201866DB9F00E33D1D /* UIViewController+Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */; };
+		6D70C541186805B400E33D1D /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C540186805B400E33D1D /* GZIP.m */; };
+		6D70C5441868079F00E33D1D /* Sentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70C5431868079F00E33D1D /* Sentinel.m */; };
 		6D8DB84E1852D3AE009DA6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84D1852D3AE009DA6BE /* Foundation.framework */; };
 		6D8DB8501852D3AE009DA6BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */; };
 		6D8DB8521852D3AE009DA6BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB8511852D3AE009DA6BE /* UIKit.framework */; };
@@ -28,6 +30,7 @@
 		6D8DB88B1852DD33009DA6BE /* SSRedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB8891852DD33009DA6BE /* SSRedViewController.xib */; };
 		6D8DB88F1852DD4F009DA6BE /* SSBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB88D1852DD4F009DA6BE /* SSBlueViewController.m */; };
 		6D8DB8901852DD4F009DA6BE /* SSBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DB88E1852DD4F009DA6BE /* SSBlueViewController.xib */; };
+		6DB83BE11868291B00F824A7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB83BE01868291B00F824A7 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,10 @@
 		6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Sentinel.m"; sourceTree = "<group>"; };
 		6D70C5171866DB9F00E33D1D /* UIViewController+Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sentinel.h"; sourceTree = "<group>"; };
 		6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sentinel.m"; sourceTree = "<group>"; };
+		6D70C53F186805B400E33D1D /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
+		6D70C540186805B400E33D1D /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
+		6D70C5421868079F00E33D1D /* Sentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sentinel.h; sourceTree = "<group>"; };
+		6D70C5431868079F00E33D1D /* Sentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sentinel.m; sourceTree = "<group>"; };
 		6D8DB84A1852D3AE009DA6BE /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8DB84D1852D3AE009DA6BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +76,7 @@
 		6D8DB88C1852DD4F009DA6BE /* SSBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBlueViewController.h; sourceTree = "<group>"; };
 		6D8DB88D1852DD4F009DA6BE /* SSBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBlueViewController.m; sourceTree = "<group>"; };
 		6D8DB88E1852DD4F009DA6BE /* SSBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSBlueViewController.xib; sourceTree = "<group>"; };
+		6DB83BE01868291B00F824A7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB83BE11868291B00F824A7 /* libz.dylib in Frameworks */,
 				6D8DB8501852D3AE009DA6BE /* CoreGraphics.framework in Frameworks */,
 				6D8DB8521852D3AE009DA6BE /* UIKit.framework in Frameworks */,
 				6D8DB84E1852D3AE009DA6BE /* Foundation.framework in Frameworks */,
@@ -88,6 +97,8 @@
 		6D534C341865748A000197F5 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
+				6D70C53F186805B400E33D1D /* GZIP.h */,
+				6D70C540186805B400E33D1D /* GZIP.m */,
 				6D70C5091866DB9F00E33D1D /* NSObject+Sentinel.h */,
 				6D70C50A1866DB9F00E33D1D /* NSObject+Sentinel.m */,
 				6D70C50B1866DB9F00E33D1D /* SKPaymentQueue+Sentinel.h */,
@@ -104,6 +115,8 @@
 				6D70C5161866DB9F00E33D1D /* UITableView+Sentinel.m */,
 				6D70C5171866DB9F00E33D1D /* UIViewController+Sentinel.h */,
 				6D70C5181866DB9F00E33D1D /* UIViewController+Sentinel.m */,
+				6D70C5421868079F00E33D1D /* Sentinel.h */,
+				6D70C5431868079F00E33D1D /* Sentinel.m */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 		6D8DB84C1852D3AE009DA6BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DB83BE01868291B00F824A7 /* libz.dylib */,
 				6D8DB84D1852D3AE009DA6BE /* Foundation.framework */,
 				6D8DB84F1852D3AE009DA6BE /* CoreGraphics.framework */,
 				6D8DB8511852D3AE009DA6BE /* UIKit.framework */,
@@ -244,6 +258,8 @@
 				6D70C51B1866DB9F00E33D1D /* SKRequest+Sentinel.m in Sources */,
 				6D8DB8671852D3AF009DA6BE /* SSViewController.m in Sources */,
 				6D70C51D1866DB9F00E33D1D /* UICollectionView+Sentinel.m in Sources */,
+				6D70C5441868079F00E33D1D /* Sentinel.m in Sources */,
+				6D70C541186805B400E33D1D /* GZIP.m in Sources */,
 				6D70C5201866DB9F00E33D1D /* UIViewController+Sentinel.m in Sources */,
 				6D8DB85E1852D3AE009DA6BE /* SSAppDelegate.m in Sources */,
 				6D8DB85A1852D3AE009DA6BE /* main.m in Sources */,

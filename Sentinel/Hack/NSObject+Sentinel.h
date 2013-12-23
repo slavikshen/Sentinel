@@ -12,6 +12,22 @@
 #define _F(fmt,...) ([NSString stringWithFormat:fmt, ##__VA_ARGS__] ) 
 #endif
 
+#ifndef SRELEASE
+#if __has_feature(objc_arc)
+#define SRELEASE(x) { x = nil; }
+#else
+#define SRELEASE(x) { [x release]; x = nil; }
+#endif
+#endif
+
+#ifndef SRETAIN
+#if __has_feature(objc_arc)
+#define SRETAIN(x) x
+#else
+#define SRETAIN(x) [x retain]
+#endif
+#endif
+
 @interface NSObject (Sentinel)
 
 + (BOOL)swizzleMethod:(SEL)origSelector withMethod:(SEL)newSelector;

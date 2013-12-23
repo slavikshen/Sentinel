@@ -8,7 +8,8 @@
 
 #import <objc/runtime.h>
 
-#import "NSObject+Sentinel.h"
+#import "Sentinel.h"
+
 #ifdef FLURRY_ID
 #import "Flurry+LogAfx.h"
 #endif
@@ -73,20 +74,13 @@
 }
 
 - (void)sentinelLogEvent:(NSString*)event {
-
-    NSDate* now = [NSDate date];
-    NSUInteger timestamp = (NSUInteger)[now timeIntervalSince1970];
-    NSMutableString* buf = [NSMutableString stringWithString:event];
-    [buf insertString:_F(@"\"time\":\"%u\",", timestamp) atIndex:1];
-    
-#if DEBUG
-    NSLog(@"Sentinel: %@", buf);
-#endif
     
 #ifdef FLURRY_ID
     [Flurry logUserEvent:event];
+#else
+    [[Sentinel sharedInstance] appendLog:event];
 #endif
-    
+   
 }
 
 - (BOOL)sentinelEnabledInTheClass {
