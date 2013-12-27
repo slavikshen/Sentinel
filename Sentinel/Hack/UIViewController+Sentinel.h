@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Sentinel)
+@end
 
+@interface UINavigationController (Sentinel)
+@end
+
+@interface UIPopoverController (Sentinel)
+@end
+
+@interface UITabBarController (Sentinel)
 @end

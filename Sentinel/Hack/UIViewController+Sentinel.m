@@ -41,12 +41,6 @@
 }
 
 - (BOOL)sentinelEnabledInTheClass {
-
-    if( [self isKindOfClass:[UINavigationController class]] ||
-        [self isKindOfClass:[UIPopoverController class]] ||
-        [self isKindOfClass:[UITabBarController class]] ) {
-        return NO;
-    }
     return YES;
 }
 
@@ -62,6 +56,30 @@
         identification = _F(@"{\"class\":\"%@\"}", className);
     }
     return identification;
+}
+
+@end
+
+@implementation UINavigationController (Sentinel)
+
+- (BOOL)sentinelEnabledInTheClass {
+    return NO;
+}
+
+@end
+
+@implementation UIPopoverController (Sentinel)
+
+- (BOOL)sentinelEnabledInTheClass {
+    return NO;
+}
+
+@end
+
+@implementation UITabBarController (Sentinel)
+
+- (BOOL)sentinelEnabledInTheClass {
+    return NO;
 }
 
 @end

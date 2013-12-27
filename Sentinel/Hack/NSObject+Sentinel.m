@@ -8,10 +8,11 @@
 
 #import <objc/runtime.h>
 
-#import "Sentinel.h"
-
 #ifdef FLURRY_ID
 #import "Flurry+LogAfx.h"
+#import "JSONKit.h"
+#else
+#import "Sentinel.h"
 #endif
 
 @implementation NSObject (Sentinel)
@@ -76,7 +77,31 @@
 - (void)sentinelLogEvent:(NSString*)event {
     
 #ifdef FLURRY_ID
-    [Flurry logUserEvent:event];
+    
+    NSDictionary* json = [event objectFromJSONString];
+    
+    NSString* eventName = json[@"event"];
+    NSDictionary* sender = json[@"sender"];
+    NSString* className = sender[@"class"];
+
+    NSString* flurryEventName = eventName;
+    if( className.length ) {
+        flurryEventName = _F(@"%@:%@",eventName, className);
+    }
+    
+    UIDevice* currentDevice = [UIDevice currentDevice];
+	NSString* systemVersion = [currentDevice systemVersion];
+	NSString* systemModel = [currentDevice platform];
+	NSString* deviceId = [currentDevice deviceId];
+	
+	NSMutableDictionary* args = [NSMutableDictionary dictionaryWithDictionary:json];
+    
+    args[@"sysVer"] = systemVersion;
+    args[@"model"] = systemModel;
+    args[@"deviceId"] = deviceId;
+    
+    [Flurry logEvent:flurryEventName withParameters:args];
+    
 #else
     [[Sentinel sharedInstance] appendLog:event];
 #endif
