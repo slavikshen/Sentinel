@@ -81,12 +81,29 @@
     NSDictionary* json = [event objectFromJSONString];
     
     NSString* eventName = json[@"event"];
+    
+    if( nil == eventName ) {
+        return;
+    }
+    
     NSDictionary* sender = json[@"sender"];
     NSString* className = sender[@"class"];
+    NSDictionary* delegate = sender[@"delegate"];
+    NSDictionary* datasource = sender[@"datasource"];
 
-    NSString* flurryEventName = eventName;
+    NSMutableString* flurryEventName = [NSMutableString stringWithString:eventName];;
+    
     if( className.length ) {
-        flurryEventName = _F(@"%@:%@",eventName, className);
+        [flurryEventName appendString:@":"];
+        [flurryEventName appendString:className];
+    }
+    if( delegate ) {
+        [flurryEventName appendString:@"+"];
+        [flurryEventName appendString:delegate[@"class"]];
+    }
+    if( datasource ) {
+        [flurryEventName appendString:@"+"];
+        [flurryEventName appendString:datasource[@"class"]];
     }
     
     UIDevice* currentDevice = [UIDevice currentDevice];
